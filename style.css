@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* ----- Reset & Base ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* ----- Links ----- */
+a {
+  color: #e63946;
+  text-decoration: none;
+}
+
+/* ----- Headings ----- */
+h1, h2, h3 {
+  color: #e63946;
+  font-weight: 700;
+}
+
+/* ----- Sections ----- */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Section Titles */
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #e63946;
+  margin-top: 6px;
+}
+
+/* ----- Header ----- */
+.header {
+  background: rgba(0,0,0,0.7);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.header-inner {
+  text-align: center;
+}
+.header h1 {
+  font-size: 2.8rem;
+}
+.subheading {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+.contact {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.contact span {
+  display: inline-block;
+  margin: 0.4rem 1rem;
+}
+
+/* ----- Two-Column Grids ----- */
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 2rem;
+}
+
+/* Skills Lists */
+.skills-list li::before {
+  content: '•';
+  color: #e63946;
+  display: inline-block;
+  width: 1rem;
+}
+
+/* ----- Experience & Jobs ----- */
+.experience .job {
+  margin-bottom: 1.5rem;
+}
+.job-date {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+.job ul {
+  list-style: disc inside;
+}
+.job ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ----- Education ----- */
+.edu-list {
+  list-style: disc inside;
+}
+.edu-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* ----- Certifications & Activities ----- */
+.certifications ul {
+  list-style: square inside;
+}
+.certifications li {
+  margin-bottom: 0.5rem;
+}
+
+/* ----- Languages & Interests ----- */
+.languages-list {
+  list-style: disc inside;
+  margin-bottom: 0.5rem;
+}
+.interests {
+  font-style: italic;
+  color: #ccc;
+}
+
+/* ----- Footer ----- */
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 3rem;
+}
+
+/* ----- AOS Overrides ----- */
+[data-aos] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: opacity, transform;
+}
